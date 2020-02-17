@@ -6,7 +6,7 @@ build:
   verbosity: minimal
 install:
   - cmd: dir
-  - cmd: cd "C:\Program Files (x86)"
+  - cmd: cd "C:\Program Files (x86)\MSBuild"
   - cmd: dir
 artifacts:
 - path: '*.zip'
