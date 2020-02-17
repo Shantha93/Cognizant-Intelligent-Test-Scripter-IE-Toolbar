@@ -4,6 +4,7 @@ pull_requests:
 configuration: Release
 build:
   verbosity: minimal
+  -cmd: dir
 artifacts:
 - path: '*.zip'
   name: cits
