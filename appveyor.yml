@@ -9,6 +9,8 @@ install:
   - cmd: dir
   - cmd: cd "C:\Program Files (x86)\MSBuild"
   - cmd: dir
+after_build:
+  - cmd: 7z a "CITS_IE_Toolbar-%APPVEYOR_REPO_TAG_NAME%.zip" "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release\CITS_IE_Toolbar.msi"
 artifacts:
 - path: '*.zip'
   name: cits
