@@ -5,7 +5,7 @@ configuration: Release
 build:
   verbosity: minimal
 install:
-  - cmd: echo saranya
+  - cmd: dir
 artifacts:
 - path: '*.zip'
   name: cits
