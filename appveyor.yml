@@ -4,7 +4,7 @@ pull_requests:
 configuration: Release
 build:
   verbosity: minimal
-  after_build:
+after_build:
 - cmd: 7z a "CITS_IE_Toolbar-%APPVEYOR_REPO_TAG_NAME%.zip" "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release\CITS_IE_Toolbar.msi"
 artifacts:
 - path: '*.zip'
