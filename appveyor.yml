@@ -4,6 +4,8 @@ pull_requests:
 configuration: Release
 build:
   verbosity: minimal
+install:
+  - cmd: echo saranya
 artifacts:
 - path: '*.zip'
   name: cits
@@ -17,4 +19,3 @@ deploy:
   force_update: false
   on:
     appveyor_repo_tag: true
-- cmd: dir
