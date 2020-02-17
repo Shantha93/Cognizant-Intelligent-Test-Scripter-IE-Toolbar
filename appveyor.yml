@@ -21,6 +21,6 @@ deploy:
     secure: 12b24a050affabd508138989656eaf00e1c23b7f
   artifact: cits
   prerelease: false
-  force_update: false
+  force_update: true
   on:
     appveyor_repo_tag: true
