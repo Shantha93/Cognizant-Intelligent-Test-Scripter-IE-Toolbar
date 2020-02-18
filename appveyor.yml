@@ -5,9 +5,6 @@ pull_requests:
 configuration: Release
 build:
   verbosity: minimal
-install:
-  - cmd: cd "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release"
-  - cmd: dir
 after_build:
   - cmd: 7z a "shantha.zip" "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release\CITS_IE_Toolbar.msi"
   - cmd: cd "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release"
