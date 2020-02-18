@@ -22,6 +22,5 @@ deploy:
   artifact: cits
   prerelease: true
   force_update: true
-  tag: $(APPVEYOR_REPO_TAG_NAME)
   on:
     appveyor_repo_tag: true
