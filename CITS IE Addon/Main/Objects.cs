@@ -182,6 +182,9 @@ namespace CITS_IE_Addon.Main
                     case Attributes.type:
                         property.val = elem.tagName.ToLower();
                         break;
+                    case Attributes.shantha:
+                        property.val = "hi test";
+                        break;
                 }
                 properties.Add(property);
 
@@ -341,7 +344,8 @@ namespace CITS_IE_Addon.Main
         public const String css = "css";
         public const String classname = "class";
         public const String type = "type";
+         public const String shantha = "shantha";
 
-        public static List<String> attrs = new List<String>(new String[] { id, name, linktext, rxpath, xpath, css, classname, type });
+        public static List<String> attrs = new List<String>(new String[] { id, name, linktext, rxpath, xpath, css, classname, type, shantha });
     }
 }
