@@ -10,11 +10,11 @@ install:
   - cmd: cd "C:\Program Files (x86)\MSBuild"
   - cmd: dir
 after_build:
-  - cmd: 7z a "CITS_IE_Toolbar-%APPVEYOR_REPO_TAG_NAME%.zip" "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release\CITS_IE_Toolbar.msi"
+  - cmd: 7z a "shantha.zip" "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release\CITS_IE_Toolbar.msi"
   - cmd: cd "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release"
   - cmd: dir
 artifacts:
-- path: '*.zip'
+- path: 'shantha.zip'
   name: cits
 deploy:
 - provider: GitHub
