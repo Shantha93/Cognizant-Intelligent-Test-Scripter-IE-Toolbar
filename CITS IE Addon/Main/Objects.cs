@@ -165,7 +165,7 @@ namespace CITS_IE_Addon.Main
                         property.val = Util.getAttribute(elem, "name");
                         break;
                     case Attributes.linktext:
-                        property.val = getLinkText(elem);
+                        property.val = "sample text god";
                         break;
                     case Attributes.classname:
                         property.val = elem.className == null ? "" : elem.className.Trim();
