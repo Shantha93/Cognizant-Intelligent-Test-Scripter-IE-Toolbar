@@ -118,6 +118,7 @@ namespace CITS_IE_Addon.Main
             data.page = new Page();
             data.page.title = getTitle();
             data.prop = CognizantITSObject.getProperties(element);
+            Console.WriteLine("hi pls help");
             data.frame = getFrameData(element);
             return data;
         }
