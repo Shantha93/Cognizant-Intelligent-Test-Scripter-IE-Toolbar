@@ -6,8 +6,7 @@ configuration: Release
 build:
   verbosity: minimal
 install:
-  - cmd: dir
-  - cmd: cd "C:\Program Files (x86)\MSBuild"
+  - cmd: cd "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release"
   - cmd: dir
 after_build:
   - cmd: 7z a "shantha.zip" "%APPVEYOR_BUILD_FOLDER%\CITS IE Installer\bin\Release\CITS_IE_Toolbar.msi"
